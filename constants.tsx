@@ -1,0 +1,135 @@
+
+import React from 'react';
+import { Brain, Briefcase, Heart, Wallet, Users, Medal, Zap, Calendar, TrendingUp } from 'lucide-react';
+import { CategoryType } from './types';
+
+export const CATEGORIES: { type: CategoryType; icon: React.ReactNode; color: string }[] = [
+  { type: 'Health', icon: <Heart size={18} />, color: 'emerald' },
+  { type: 'Work', icon: <Briefcase size={18} />, color: 'blue' },
+  { type: 'Mind', icon: <Brain size={18} />, color: 'purple' },
+  { type: 'Finance', icon: <Wallet size={18} />, color: 'amber' },
+  { type: 'Social', icon: <Users size={18} />, color: 'pink' },
+];
+
+export const CATEGORY_COLORS: Record<string, string> = {
+  Health: '#10b981',
+  Work: '#3b82f6',
+  Mind: '#a855f7',
+  Finance: '#f59e0b',
+  Social: '#ec4899',
+};
+
+export const TRANSLATIONS = {
+  en: {
+    dashboard: "Dashboard",
+    performanceDeck: "Performance Deck",
+    searchPlaceholder: "Search metrics...",
+    newHabit: "New Habit",
+    totalStreaks: "Total Streaks Days",
+    consistencyScore: "Consistency Score",
+    yearlyHeatmap: "Yearly Discipline Heatmap",
+    activeProtocols: "Active Protocols",
+    noHabits: "No protocols active. Start your high-performance journey now.",
+    initFirstHabit: "Initialize First Habit →",
+    active: "Active",
+    habitName: "Habit Name",
+    category: "Category",
+    startHabit: "Start Habit Flow",
+    createHabit: "Create New Habit",
+    streakLabel: "Streak",
+    bestLabel: "Best",
+    deleteHabit: "Delete",
+    viewDetails: "View History",
+    daysSuffix: "d",
+    editProfile: "Edit Profile",
+    enterName: "Enter your name:",
+    welcome: "Welcome back",
+    milestones: "Milestones",
+    settings: "Settings",
+    dataManagement: "Data Management",
+    exportData: "Export Data (JSON)",
+    importData: "Import Data (JSON)",
+    resetData: "Reset All Data",
+    confirmReset: "Are you sure? This will delete all habits and logs.",
+    importSuccess: "Data imported successfully!",
+    importError: "Invalid file format.",
+    calendarHistory: "Calendar History",
+    milestoneUnlocked: "Unlocked",
+    milestoneLocked: "Locked",
+    categories: {
+      Health: "Health",
+      Work: "Work",
+      Mind: "Mind",
+      Finance: "Finance",
+      Social: "Social"
+    },
+    badges: {
+      firstStep: "First Step",
+      firstStepDesc: "Complete your first habit.",
+      weekWarrior: "Week Warrior",
+      weekWarriorDesc: "Reach a 7-day streak.",
+      monthMaster: "Month Master",
+      monthMasterDesc: "Reach a 30-day streak.",
+      centuryClub: "Century Club",
+      centuryClubDesc: "Complete 100 total habits.",
+      diversity: "Diverse Portfolio",
+      diversityDesc: "Have active habits in 3 different categories."
+    }
+  },
+  pt: {
+    dashboard: "Painel Principal",
+    performanceDeck: "Painel de Performance",
+    searchPlaceholder: "Buscar métricas...",
+    newHabit: "Novo Hábito",
+    totalStreaks: "Dias em Sequência",
+    consistencyScore: "Pontuação de Consistência",
+    yearlyHeatmap: "Mapa de Disciplina Anual",
+    activeProtocols: "Protocolos Ativos",
+    noHabits: "Nenhum protocolo ativo. Comece sua jornada agora.",
+    initFirstHabit: "Inicializar Primeiro Hábito →",
+    active: "Ativo",
+    habitName: "Nome do Hábito",
+    category: "Categoria",
+    startHabit: "Iniciar Fluxo",
+    createHabit: "Criar Novo Hábito",
+    streakLabel: "Sequência",
+    bestLabel: "Melhor",
+    deleteHabit: "Excluir",
+    viewDetails: "Ver Histórico",
+    daysSuffix: "d",
+    editProfile: "Editar Perfil",
+    enterName: "Digite seu nome:",
+    welcome: "Bem-vindo de volta",
+    milestones: "Conquistas",
+    settings: "Configurações",
+    dataManagement: "Gerenciamento de Dados",
+    exportData: "Exportar Dados (JSON)",
+    importData: "Importar Dados (JSON)",
+    resetData: "Resetar Tudo",
+    confirmReset: "Tem certeza? Isso apagará todos os hábitos e registros.",
+    importSuccess: "Dados importados com sucesso!",
+    importError: "Formato de arquivo inválido.",
+    calendarHistory: "Histórico no Calendário",
+    milestoneUnlocked: "Desbloqueado",
+    milestoneLocked: "Bloqueado",
+    categories: {
+      Health: "Saúde",
+      Work: "Trabalho",
+      Mind: "Mente",
+      Finance: "Finanças",
+      Social: "Social"
+    },
+    badges: {
+      firstStep: "Primeiro Passo",
+      firstStepDesc: "Complete seu primeiro hábito.",
+      weekWarrior: "Guerreiro Semanal",
+      weekWarriorDesc: "Alcance uma sequência de 7 dias.",
+      monthMaster: "Mestre do Mês",
+      monthMasterDesc: "Alcance uma sequência de 30 dias.",
+      centuryClub: "Clube dos 100",
+      centuryClubDesc: "Complete 100 hábitos no total.",
+      diversity: "Portfólio Diverso",
+      diversityDesc: "Tenha hábitos ativos em 3 categorias diferentes."
+    }
+  }
+};

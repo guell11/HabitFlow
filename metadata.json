@@ -1,0 +1,8 @@
+{
+  "name": "HabitFlow SaaS",
+  "description": "A high-performance personal habit tracker featuring a premium Bento Grid layout and GitHub-style contribution heatmaps.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
